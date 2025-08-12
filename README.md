@@ -29,6 +29,8 @@
    ```python
   	# All These Wrapped In Function
    def train_model(xtrain, xtest, ytest, ytrain):
+	<img width="1489" height="989" alt="image" src="https://github.com/user-attachments/assets/908a7b9c-ffe5-462d-a4a5-7a87427fa0a6" />
+
 	-
  	-
 	-
