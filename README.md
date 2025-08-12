@@ -28,7 +28,12 @@
 
    ```python
   	# All These Wrapped In Function
-   def train_model(xtrain, xtest, ytest, ytrain)
+   def train_model(xtrain, xtest, ytest, ytrain):
+	-
+ 	-
+	-
+ 	-
+	return data
 
 ```
 
