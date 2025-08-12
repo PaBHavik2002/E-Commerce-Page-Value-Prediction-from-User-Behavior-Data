@@ -26,8 +26,8 @@
  	Random Forest Regression -> Ensemble Approach for non-linearity
 	Gradient Boost Regression -> Boosting Method for Improved Accuracy
 
-  	# All These Wrapped In Function
    ```python
+  	# All These Wrapped In Function
    def train_model(xtrain, xtest, ytest, ytrain)
 
 ```
