@@ -131,7 +131,7 @@ Method Used For Evaluation
 ```
 
 > Result -> Visualized
-![ref_image/output.png]
+![Model Performance Image](ref_image/output.png)
 
 > Model performance was assessed using Root Mean Squared Error (RMSE) and R² on both training and test data. RMSE values were consistent between training and testing, indicating good generalization. Among all models, Random Forest and Gradient Boosting achieved the best balance of low RMSE and high R², effectively capturing the variance in Page Value while avoiding overfitting.
 
