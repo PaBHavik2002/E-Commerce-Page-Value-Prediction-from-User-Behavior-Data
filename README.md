@@ -42,6 +42,14 @@ Method Used For Evaluation
 
  This is used to check, how effective our model is in capturing the variance in the data. It is measured between 0 to 1, where 0 being the worst and 1 being good model.
 
+> What's New
+
+ 	1. Feature Engineering
+  	2. Multiple Models Comparison
+   	3. Basline Model Check
+	4. Training and Testing Score Visualization
+ 	5. Model's Accuracy Demonstration VIA visuals
+
 > Model performance was assessed using Root Mean Squared Error (RMSE) and R² on both training and test data. RMSE values were consistent between training and testing, indicating good generalization. Among all models, Random Forest and Gradient Boosting achieved the best balance of low RMSE and high R², effectively capturing the variance in Page Value while avoiding overfitting.
 
 > The results demonstrate that time spent on product-related pages and session engagement patterns are strong predictors of Page Value. Businesses could leverage such models to prioritize high-value pages, optimize marketing campaigns, and improve site design for revenue impact.
