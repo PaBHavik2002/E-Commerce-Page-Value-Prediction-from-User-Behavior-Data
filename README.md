@@ -34,11 +34,11 @@
 
 Method Used For Evaluation
 > RMSE (Root Mean Squared)
-	- This evaluation helped understand the model performance as all the models we have is regression and thus we need something to evaluate based on the error between the actual and predicted.
-	- The reason why this metric used over other liker Mean Squared Error (mse) and Mean Absolute Error (MAE), is beacause of the nature of RMSE, takes the square root of MSE, so the result is in the same units as the target variable. This makes it easier to interpret — you can directly say, “on average, predictions are X units off.”
+This evaluation helped understand the model performance as all the models we have is regression and thus we need something to evaluate based on the error between the actual and predicted.
+The reason why this metric used over other liker Mean Squared Error (mse) and Mean Absolute Error (MAE), is beacause of the nature of RMSE, takes the square root of MSE, so the result is in the same units as the target variable. This makes it easier to interpret — you can directly say, “on average, predictions are X units off.”
 
 > R2 (Coefficient of Determination)
-	- This is used to check, how effective our model is in capturing the variance in the data. It is measured between 0 to 1, where 0 being the worst and 1 being good model.
+This is used to check, how effective our model is in capturing the variance in the data. It is measured between 0 to 1, where 0 being the worst and 1 being good model.
 
 > Model performance was assessed using Root Mean Squared Error (RMSE) and R² on both training and test data. RMSE values were consistent between training and testing, indicating good generalization. Among all models, Random Forest and Gradient Boosting achieved the best balance of low RMSE and high R², effectively capturing the variance in Page Value while avoiding overfitting.
 
