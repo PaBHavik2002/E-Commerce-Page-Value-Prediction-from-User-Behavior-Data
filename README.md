@@ -26,7 +26,8 @@
  	Random Forest Regression -> Ensemble Approach for non-linearity
 	Gradient Boost Regression -> Boosting Method for Improved Accuracy
 
-  	# All These Wrapped In Function    	
+  	# All These Wrapped In Function
+   ```python
    	def train_model(xtrain, xtest, ytest, ytrain)
 
 > Model performance was assessed using Root Mean Squared Error (RMSE) and R² on both training and test data. RMSE values were consistent between training and testing, indicating good generalization. Among all models, Random Forest and Gradient Boosting achieved the best balance of low RMSE and high R², effectively capturing the variance in Page Value while avoiding overfitting.
