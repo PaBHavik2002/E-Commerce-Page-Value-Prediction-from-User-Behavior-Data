@@ -56,6 +56,80 @@ Method Used For Evaluation
 	4. Training and Testing Score Visualization
  	5. Model's Accuracy Demonstration VIA visuals
 
+> Data Pipeline for scaling the features
+```python
+	def convert_Xtrain(data_var):
+
+    # Saving encoders for specific columns
+    lbEncoder = {}
+    scEncoder = {}
+    prEncoder = {}
+
+    if not data_var.empty:
+
+        catData = data_var.select_dtypes(include=['bool', 'object'])
+        numData = data_var.select_dtypes(include=['int', 'float'])
+
+        # First Categorical Data
+        catCol = catData.columns
+
+        for eachColumn in catCol:
+
+            # Fitting the method
+            encoder = LabelEncoder()
+            new_Column_Value = encoder.fit_transform(catData[eachColumn])
+            lbEncoder[eachColumn] = encoder
+
+            # Scaling the encoded ones
+            scaler = StandardScaler()
+            scaled_New_values = scaler.fit_transform(pandas.DataFrame(new_Column_Value, columns=[eachColumn]))
+            scEncoder[eachColumn] = scaler
+
+            # Passing it to the respective column
+            catData[eachColumn] = scaled_New_values.flatten()
+
+            # Transferring each transformers
+
+        # Second Continous Data
+        numCol = numData.columns
+
+        for eachColumns in numCol:
+
+            # Power Transformer
+            columnMean = numData[eachColumns].mean()
+            columnMedian = numData[eachColumns].median()
+
+            # This transformer handles the skewness of the data as well as
+            # It scales down the columns. So no need to use any transformation method
+            if columnMean > columnMedian:
+                
+                # When the data is right skewed
+                transformer = PowerTransformer(method='yeo-johnson')
+                numScaledValues = transformer.fit_transform(pandas.DataFrame(numData[eachColumns], columns=[eachColumns]))
+                numData[eachColumns] = numScaledValues
+            
+            elif columnMean < columnMedian:
+
+                # When the data is left skewed
+                transformer = PowerTransformer(method='yeo-johnson')
+                numScaledValues = transformer.fit_transform(pandas.DataFrame(numData[eachColumns], columns=[eachColumns]))
+                numData[eachColumns] = numScaledValues
+            
+
+            # Transferring the transformer
+            prEncoder[eachColumns] = transformer
+
+        # Concatenating both the data
+        concat_data = pandas.DataFrame(
+            pandas.concat([catData, numData], axis=1)
+        )
+
+        return concat_data, lbEncoder, scEncoder, prEncoder
+
+    else:
+        return 'please pass the data in this function'
+```
+
 > Model performance was assessed using Root Mean Squared Error (RMSE) and R² on both training and test data. RMSE values were consistent between training and testing, indicating good generalization. Among all models, Random Forest and Gradient Boosting achieved the best balance of low RMSE and high R², effectively capturing the variance in Page Value while avoiding overfitting.
 
 > The results demonstrate that time spent on product-related pages and session engagement patterns are strong predictors of Page Value. Businesses could leverage such models to prioritize high-value pages, optimize marketing campaigns, and improve site design for revenue impact.
