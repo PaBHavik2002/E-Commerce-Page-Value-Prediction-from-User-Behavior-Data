@@ -130,6 +130,9 @@ Method Used For Evaluation
         return 'please pass the data in this function'
 ```
 
+> Result -> Visualized
+![ref_image/output.png]
+
 > Model performance was assessed using Root Mean Squared Error (RMSE) and R² on both training and test data. RMSE values were consistent between training and testing, indicating good generalization. Among all models, Random Forest and Gradient Boosting achieved the best balance of low RMSE and high R², effectively capturing the variance in Page Value while avoiding overfitting.
 
 > The results demonstrate that time spent on product-related pages and session engagement patterns are strong predictors of Page Value. Businesses could leverage such models to prioritize high-value pages, optimize marketing campaigns, and improve site design for revenue impact.
