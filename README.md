@@ -37,10 +37,6 @@
 	return data
 
 ```
-```html
-	<img width="1489" height="989" alt="image" src="https://github.com/user-attachments/assets/282c9213-ba9c-4793-b861-5bebd9dabc3b" />
-
-```
 
 Method Used For Evaluation
 > RMSE (Root Mean Squared)
