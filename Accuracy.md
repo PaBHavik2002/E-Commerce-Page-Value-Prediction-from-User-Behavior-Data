@@ -6,14 +6,14 @@
 The initial set of models was trained **without advanced feature engineering**.  
 Performance (measured in **RMSE**) was consistent but limited in capturing deeper session-level insights.
 
-| Model             | Test Score | Train Score |
-|-------------------|------------|-------------|
-| Linear Model      | 0.922663   | 0.937731    |
-| Lasso Regression  | 1.321685   | 1.313111    |
-| Polynomial Model  | 0.922663   | 0.937731    |
-| Random Forest     | 0.912186   | 1.313111    |
-| Gradient Boosting | 0.891760   | 0.885656    |
-
+| Model                                         |    RMSE   |
+|-----------------------------------------------|----------:|
+| Linear Model                                  | 5.902286  |
+| Random Sample Concuses (Linear Model)         | 6.018235  |
+| Random Sample Concuses (Lasso Regularization) | 6.199422  |
+| Polynomial Regression                         | 5.902286  |
+| Random Forest Regression                      | 5.780631  |
+| Gradient Boost Regression                     | 5.767567  |
 ---
 
 ## Feature Engineering Introduced
