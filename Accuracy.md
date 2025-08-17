@@ -68,4 +68,4 @@ With the engineered features included, the models showed improved generalization
 
 ---
 
-📌 *This project demonstrates how careful feature engineering combined with ensemble methods can significantly improve predictive performance in real-world e-commerce analytics.*
+*This project demonstrates how careful feature engineering combined with ensemble methods can significantly improve predictive performance in real-world e-commerce analytics.*
