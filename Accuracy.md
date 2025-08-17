@@ -2,7 +2,7 @@
 
 ---
 
-## 📊 Model Accuracy Before Feature Engineering
+## Model Accuracy Before Feature Engineering
 The initial set of models was trained **without advanced feature engineering**.  
 Performance (measured in **RMSE**) was consistent but limited in capturing deeper session-level insights.
 
@@ -16,7 +16,7 @@ Performance (measured in **RMSE**) was consistent but limited in capturing deepe
 
 ---
 
-## ⚙️ Feature Engineering Introduced
+## Feature Engineering Introduced
 To better capture **user behavior patterns**, the following engineered features were created:
 
 - **Page Ratios**:  
@@ -40,7 +40,7 @@ To better capture **user behavior patterns**, the following engineered features 
 
 ---
 
-## 📈 Model Accuracy After Feature Engineering
+## Model Accuracy After Feature Engineering
 With the engineered features included, the models showed improved generalization, particularly for ensemble methods.
 
 | Model             | Test Score | Train Score |
@@ -53,14 +53,14 @@ With the engineered features included, the models showed improved generalization
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 - After adding **Feature Engineering**, the models became more capable of capturing **session engagement patterns, time allocation, and seasonal effects**.  
 - **Gradient Boost Regression** emerged as the **best-performing model**, achieving the lowest RMSE on both training and testing sets while avoiding overfitting.  
 - This highlights the importance of creating **domain-relevant features** that reflect actual user behavior rather than relying only on raw counts and durations.
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 - **Python**  
 - **Pandas, NumPy, Scikit-learn**  
 - **Matplotlib, Seaborn**  
