@@ -1,4 +1,4 @@
-# 🛒 E-Commerce Page Value Prediction from User Behavior Data
+# E-Commerce Page Value Prediction from User Behavior Data
 
 ---
 
